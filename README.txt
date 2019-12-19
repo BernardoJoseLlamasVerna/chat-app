@@ -39,3 +39,7 @@ io.on('connection', (socket) => { ... }
 
 To send a message to every connection except a particular we use broadcast.emit()
 socket.broadcast.emit('message', 'A new user has joined!');
+
+Geolocation:
+------------
+We are going to use MDN (Mozilla Developer Network) Geolocation API to share location between users.
