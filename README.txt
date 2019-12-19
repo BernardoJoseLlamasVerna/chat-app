@@ -28,3 +28,5 @@ In package.json:
 3.- Create a "dev" script to start the app using nodemon
 ---> npm run start
 ---> npm run dev
+
+jajaja
