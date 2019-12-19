@@ -34,8 +34,9 @@ Websocket Protocol:
 1.- Install socket on our project:
 ---> npm i socket.io
 
-To send a message/or doing something when a new connection is created:
-io.on('connection', (socket) => { ... }
+To send a message/or doing something when a new connection is created: send from one user to another/others
+--->we use io.on and inside "emit"
+io.on('connection', (socket) => { emit ... }
 
 To send a message to every connection except a particular we use broadcast.emit()
 socket.broadcast.emit('message', 'A new user has joined!');
@@ -43,3 +44,11 @@ socket.broadcast.emit('message', 'A new user has joined!');
 Geolocation:
 ------------
 We are going to use MDN (Mozilla Developer Network) Geolocation API to share location between users.
+
+Server: index.js
+------
+User: chat.js
+-----
+
+To avoid bad words on our chat we use bad-words package: npm i bad-words
+-------------------------------------------------------
