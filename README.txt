@@ -33,3 +33,9 @@ Websocket Protocol:
 -------------------
 1.- Install socket on our project:
 ---> npm i socket.io
+
+To send a message/or doing something when a new connection is created:
+io.on('connection', (socket) => { ... }
+
+To send a message to every connection except a particular we use broadcast.emit()
+socket.broadcast.emit('message', 'A new user has joined!');
