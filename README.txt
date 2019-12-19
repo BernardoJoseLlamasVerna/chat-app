@@ -29,4 +29,7 @@ In package.json:
 ---> npm run start
 ---> npm run dev
 
-jajaja
+Websocket Protocol:
+-------------------
+1.- Install socket on our project:
+---> npm i socket.io
