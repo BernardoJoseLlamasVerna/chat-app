@@ -53,6 +53,3 @@ User: chat.js
 To avoid bad words on our chat we use bad-words package: npm i bad-words
 -------------------------------------------------------
 
-Heroku link:
-------------
-https://ber-chat-app.herokuapp.com/
